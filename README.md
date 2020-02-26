@@ -1,5 +1,5 @@
 # pumatech
-Theme for my middle/high school's tech server.
+**Theme for my middle/high school's tech server.**
 
 My middle/high school has a tech server where we access things like our code editor for programming classes and other files. Most people at our school use the tech server to host their websites.
 
