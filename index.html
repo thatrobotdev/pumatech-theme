@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>PumaTech Webserver | Home</title>
+    <link type="text/css" rel="stylesheet" media="all" href="" id="theme_css" />
+</head>
+
+<body>
+    <script>
+        var themes = ["day", "night", "p2phackclub"];
+        var state;
+
+        function day() {
+            document.getElementById('theme_css').href = 'day.css';
+            state = "day";
+        }
+
+        function night() {
+            document.getElementById('theme_css').href = 'night.css';
+            state = "night";
+        }
+
+        function p2phackclub() {
+            document.getElementById('theme_css').href = 'p2phackclub.css';
+            state = "p2phackclub";
+        }
+
+        function timeToggle() {
+            console.log("Oh no");
+            const currentIndex = themes.indexOf(state);
+            const nextIndex = (currentIndex + 1) % themes.length;
+            state = themes[nextIndex];
+            if (state == "day") {
+                day();
+            } else if (state == "night") {
+                night();
+            } else if (state == "p2phackclub") {
+                p2phackclub();
+            } else {
+                day();
+            }
+        }
+
+        /* Activate different css rules based on time of day */
+        var currentTime = new Date().getHours();
+        var currentDay = new Date().getDay();
+
+        console.log(currentTime);
+        if (currentDay == 4 && (currentTime <= 15 < 16)) {
+            /* If P2P Hack Club is going on (between 3:00-4:00 on a Thursday) */
+            p2phackclub();
+        }
+        if (7 <= currentTime && currentTime < 19) {
+            /* If it''s day */
+            day();
+        } else {
+            /* It''s probably night */
+            night();
+        }
+    </script>
+    <img src="photos/stars.png" alt="Stars in the night sky" id="stars" class="night">
+    <a href="#" class="author" onclick="timeToggle();">by jp kerrane<span class="day"> ☀️</span><span class="night"> 😴</span><span class="p2phackclub"> 🤖</span></a>
+    <h1 class="fadeInDown">&lt;pumatech&gt;</h1>
+    <div class="fadeInDown delay1">
+        <h2>Explore files for classes:</h2>
+        <div class="classes buttons">
+            <a href="#">[Class 1]</a>
+            <a href="#">[Class 2]</a>
+            <a href="#">[Class 3]</a>
+            <a href="#">[Class 4]</a>
+            <a href="#">[Class 5]</a>
+            <a href="#">[Class 6]</a>
+        </div>
+        <h2>Teacher Folders</h2>
+        <div class="teachers buttons">
+            <a href="#">[Teacher 1]</a>
+            <a href="#">[Teacher 2]</a>
+        </div>
+        <h2>Code editor</h2>
+        <div class="editor buttons">
+            <a href="#">Code Editor</a>
+            <a href="#">Make a link to a shared folder</a>
+        </div>
+        <h2>Reference Pages</h2>
+        <div class="other buttons">
+            <a href="https://www.w3schools.com/tags/default.asp">HTML</a>
+            <a href="https://www.w3schools.com/cssref/default.asp">CSS</a>
+            <a href="https://www.w3schools.com/jsref/default.asp">JavaScript</a>
+            <a href="https://www.w3schools.com/php/php_ref_overview.asp">PHP</a>
+            <a href="https://www.w3schools.com/python/python_reference.asp">Python</a>
+        </div>
+    </div>
+    <img src="photos/sun.svg" alt="Sun behind the mountains" class="fadeIn delay3 day" id="sun">
+    <img src="photos/moon.svg" alt="Moon behind the mountains" class="fadeIn delay3 night" id="moon">
+    <img src="photos/forem.png" alt="Mountain in foreground" class="mountain fadeIn delay3" id="forem">
+    <img src="photos/middlem.png" alt="Mountain in middleground" class="mountain fadeIn delay2" id="middlem">
+    <img src="photos/backm.png" alt="Mountain in background" class="mountain fadeIn delay1" id="backm">
+    <a href="https://p2phack.club/pumatech" class="p2phackclub">
+        <img src="photos/robot.svg" alt="P2P Hack Club Logo" class="fadeIn delay1 p2phackclub" id="robot">
+        <p class="hackclub fadeIn delay2" id="hacktext">Hacking in Hack Club? Click here!</p>
+    </a>
+    <a href="https://p2phack.club/signup"><sub class="p2phackclub" id="moreinfo">more information</sub></a>
+
+
+</body>
+
+</html>
