@@ -14,5 +14,5 @@ Identifying informaton in the theme has been removed.
 ## Night Theme
 ![Screenshot of Night Theme](night.png)
 
-## [P2P Hack Club](https://p2phack.club/) Theme
+## [P2P Hack Club Theme](https://p2phack.club/) 
 ![Screenshot of P2P Hack Club theme](p2phackclub.png)
