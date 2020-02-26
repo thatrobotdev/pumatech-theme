@@ -8,11 +8,11 @@ I made a front-page that changes based on the time of day. During the day time, 
 Identifying informaton in the theme has been removed.
 
 ## Day Theme
-![Screenshot of Day Theme](day.png)
+![Screenshot of Day Theme](images/day.png)
 
 
 ## Night Theme
-![Screenshot of Night Theme](night.png)
+![Screenshot of Night Theme](images/night.png)
 
 ## [P2P Hack Club Theme](https://p2phack.club/) 
-![Screenshot of P2P Hack Club theme](p2phackclub.png)
+![Screenshot of P2P Hack Club theme](images/p2phackclub.png)
