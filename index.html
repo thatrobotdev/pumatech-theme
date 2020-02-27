@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
     <title>PumaTech Webserver | Home</title>
     <link type="text/css" rel="stylesheet" media="all" href="" id="theme_css" />
 </head>
@@ -70,8 +70,21 @@
             night();
         }
     </script>
-    <img src="images/stars.png" alt="Stars in the night sky" id="stars" class="night">
-    <a href="#" class="author" onclick="timeToggle();">by jp kerrane<span class="day"> ☀️</span><span class="night"> 😴</span><span class="p2phackclub"> 🤖</span></a>
+    
+    <picture>
+        <source type="image/webp" srcset="images/stars.webp">
+        <source type="image/png" srcset="images/stars.png">
+        <img src="images/stars.png" alt="Stars in the night sky" id="stars" class="night">
+    </picture>
+    
+    
+    <a href="#" class="author" onclick="timeToggle();">by jp kerrane
+    <span class="day"> ☀️</span>
+    <span class="sunset"> 🌇</span>
+    <span class="night"> 😴</span>
+    <span class="p2phackclub"> 🤖</span></a>
+    
+    
     <h1 class="fadeInDown">&lt;pumatech&gt;</h1>
     <div class="fadeInDown delay1">
         <h2>Explore files for classes:</h2>
@@ -104,9 +117,25 @@
     </div>
     <img src="images/sun.svg" alt="Sun behind the mountains" class="fadeIn delay3 day" id="sun">
     <img src="images/moon.svg" alt="Moon behind the mountains" class="fadeIn delay3 night" id="moon">
-    <img src="images/forem.png" alt="Mountain in foreground" class="mountain fadeIn delay3" id="forem">
-    <img src="images/middlem.png" alt="Mountain in middleground" class="mountain fadeIn delay2" id="middlem">
-    <img src="images/backm.png" alt="Mountain in background" class="mountain fadeIn delay1" id="backm">
+    
+    <picture>
+        <source type="image/webp" srcset="images/forem.webp">
+        <source type="image/png" srcset="images/forem.png">
+        <img src="images/forem.png" alt="Mountain in foreground" class="mountain fadeIn delay3" id="forem">
+    </picture>
+    
+    <picture>
+        <source type="image/webp" srcset="images/middlem.webp">
+        <source type="image/png" srcset="images/middlem.png">
+        <img src="images/middleem.png" alt="Mountain in middleground" class="mountain fadeIn delay2" id="middlem">
+    </picture>
+    
+    <picture>
+        <source type="image/webp" srcset="images/backm.webp">
+        <source type="image/png" srcset="images/backem.png">
+        <img src="images/backm.png" alt="Mountain in middleground" class="mountain fadeIn delay1" id="backm">
+    </picture>
+    
     <a href="https://p2phack.club/pumatech" class="p2phackclub">
         <img src="images/robot.svg" alt="P2P Hack Club Logo" class="fadeIn delay1 p2phackclub" id="robot">
         <p class="hackclub fadeIn delay2" id="hacktext">Hacking in Hack Club? Click here!</p>
