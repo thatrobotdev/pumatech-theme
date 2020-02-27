@@ -1,0 +1,186 @@
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.fadeIn {
+    animation-name: fadeIn;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+}
+
+.fadeInUp {
+    animation-name: fadeInUp;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+}
+
+.fadeInDown {
+    animation-name: fadeInDown;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+}
+
+.delay1 {
+    -webkit-animation-delay: 0.4s;
+    -moz-animation-delay: 0.4s;
+    animation-delay: 0.4s;
+}
+
+.delay2 {
+    -webkit-animation-delay: 0.7s;
+    -moz-animation-delay: 0.7s;
+    animation-delay: 0.7s;
+}
+
+.delay3 {
+    -webkit-animation-delay: 1s;
+    -moz-animation-delay: 1s;
+    animation-delay: 1s;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    font-family: -apple-system, system-ui, BlinkMacSystemFont, ’Segoe UI’, ’Helvetica Neue’, Roboto, Ubuntu, Arial, sans-serif;
+    /* Always use prettiest font for system */
+    font-style: normal;
+    font-variant: normal;
+    color: white;
+    text-align: center;
+    background-image: linear-gradient(to top, #ff4e00 0%, #ec9f05 74%);
+
+}
+
+body a {
+    color: white;
+}
+
+h1 {
+    font-family: SFMono-Heavy, "Lucida Sans Typewriter", "Lucida Console", monaco, "Bitstream Vera Sans Mono", monospace;
+    font-weight: 900;
+    font-size: 6vh;
+}
+
+h2 {
+    font-family: SFCompactDisplay-Light;
+    font-weight: 300;
+    font-size: 3vh;
+    margin: 1vh;
+}
+
+#sun {
+    position: fixed;
+    left: 50%;
+    bottom: -5vh;
+    transform: translate(-50%, -50%);
+    margin: 0 auto;
+    height: 11vh;
+    opacity: 0.5;
+    display: inline-block;
+}
+
+.night {
+    display: none;
+}
+
+.day {
+    display: none;
+}
+
+.p2phackclub {
+    display: none;
+}
+
+
+/* Styling for the mountains at the bottom of the screen */
+
+.mountain {
+    position: fixed;
+    left: 50%;
+    bottom: -60px;
+    transform: translate(-50%, -50%);
+    margin: 0 auto;
+    height: 11vh;
+}
+
+#forem {
+    transform: translate(-40%, -40%);
+}
+
+#middlem {
+    transform: translate(-60%, -60%);
+}
+
+
+/* Make mountains disappear if the screen is tiny */
+
+@media only screen and (max-width: 600px),
+screen and (max-height: 500px) {
+    .mountain {
+        display: none;
+    }
+}
+
+.author {
+    font-family: SFMono-Light, monospace;
+    font-weight: 800;
+    text-decoration: none;
+    color: black;
+    background-color: #F8F9FA;
+    font-size: 1.7vh;
+    position: absolute;
+    top: 1vw;
+    left: 1vw;
+    padding: 1em 1em;
+    border-radius: 10px;
+    z-index: 2;
+}
+
+.author:hover {
+    text-decoration: underline;
+}
+
+span {
+    font-size: 2.3vh;
+}
+
+.buttons {
+    display: inline-block;
+    overflow: hidden;
+    line-height: 80px;
+}
+
+.buttons a {
+    text-decoration: none;
+    font-size: 2vh;
+    background-color: #F8F9FA;
+    color: black;
+    padding: 1em 1em;
+    display: inline-block;
+    vertical-align: middle;
+    line-height: normal;
+    border-radius: 5px;
+    transition: background-color 0.5s ease;
+}
+
+.buttons a:hover {
+    background-color: #E2E6EA;
+}
