@@ -144,7 +144,7 @@ screen and (max-height: 500px) {
     font-weight: 800;
     text-decoration: none;
     color: black;
-    background-color: #F8F9FA;
+    background-color: #40E0D0;
     font-size: 1.7vh;
     position: absolute;
     top: 1vw;
@@ -171,8 +171,8 @@ span {
 .buttons a {
     text-decoration: none;
     font-size: 2vh;
-    background-color: #F8F9FA;
-    color: black;
+    background-color: #40E0D0;
+    color: #397376;
     padding: 1em 1em;
     display: inline-block;
     vertical-align: middle;
@@ -182,5 +182,5 @@ span {
 }
 
 .buttons a:hover {
-    background-color: #E2E6EA;
+    background-color: #B1DFE5;
 }
