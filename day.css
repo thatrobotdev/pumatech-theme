@@ -106,6 +106,10 @@ h2 {
     opacity: 1;
 }
 
+.sunset {
+    display: none;   
+}
+
 
 /* Styling for the mountains at the bottom of the screen */
 

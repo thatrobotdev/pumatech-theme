@@ -103,6 +103,10 @@ h2 {
     display: none;
 }
 
+.sunset {
+    display: none;   
+}
+
 .p2phackclub img {
     position: fixed;
     left: 50%;
