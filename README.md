@@ -10,6 +10,8 @@ Identifying informaton in the theme has been removed.
 ## Day Theme
 ![Screenshot of Day Theme](images/day.png)
 
+## Sunset Theme
+![Screenshot of Sunset Theme](images/sunset.png)
 
 ## Night Theme
 ![Screenshot of Night Theme](images/night.png)
